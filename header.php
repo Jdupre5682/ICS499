@@ -1,13 +1,13 @@
 <?php
 session_start();
 ?>
-<link rel="icon" href="/images/npo-favicon.png" type="image/x-icon">
+<link rel="icon" href="/images/favicon.png" type="image/x-icon">
 <header data-role="Header" class="home-header">
   <a href="index.php"><img alt="image" src="./images/logo.jpg" loading="eager" class="home-image" /></a>
   <a href="index.php" rel="noreferrer noopener" class="home-link">
     CAR Grid View
   </a>
-  <a href="npo-list.php" rel="noreferrer noopener" class="home-link1">
+  <a href="car-list.php" rel="noreferrer noopener" class="home-link1">
     <span class="home-text">Car Rental List View</span>
     <br />
   </a>

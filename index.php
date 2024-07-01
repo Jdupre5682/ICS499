@@ -47,7 +47,7 @@ if($_POST['filter_option'] == 'Tesla'){
 
 <h1 style="text-align:center">Welcome To EV Car Rentals</h1>
 
-<form name="npo_filter" method="POST" style="text-align: center;">
+<form name="filter" method="POST" style="text-align: center;">
   <select name="filter_option" id="filter_option" onchange="this.form.submit()">
     <option value="all" selected="selected">Filter By Type</option>
     <option value="Tesla">Tesla</option>
@@ -63,14 +63,14 @@ if($_POST['filter_option'] == 'Tesla'){
 while ($row = mysqli_fetch_assoc($result)) {
   
  ?>
- <a style="text-decoration: none" href=<?php echo'view-npo.php?id='. $row["id"];?>>
+ <a style="text-decoration: none" href=<?php echo'view-car.php?id='. $row["CarID"];?>>
         <div class="card">
           <div class="card-item">
-          <p style="font-size: 14px;" class="npo_type"><?php echo $row["type"]; ?></p>
-          <p><b><?php echo '<img src="logos/' . $row["logo"] .'" style="max-width: 150px;">'; ?></b></p>
-              <p style="font-size: 20px; padding:1em;" class="topic_name"><?php echo $row["name"]; ?></p>
+          <p style="font-size: 14px;" class="type"><?php echo $row["RentalRatePerDay"] . " Per day"; ?></p>
+          <p><b><?php echo '<img src="logos/' . $row["Image"] .'" style="max-width: 150px;">'; ?></b></p>
+              <p style="font-size: 20px; padding:1em;" class="topic_name"><?php echo $row["Make"]; ?></p>
               <p style="font-size: 12px; padding:1em;" class="description">
-  <?php echo substr($row["description"], 0, 100); ?>
+  <?php echo substr($row["Year"], 0, 100); ?>
 </p>
               </a>
               </div>

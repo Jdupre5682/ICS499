@@ -376,7 +376,7 @@ i{
     transition: 0.3s;
   }
   .home-icon02:hover {
-    fill: #ff0000;
+    fill: #fffb00;
   }
   .home-select {
     width: 168px;
@@ -436,11 +436,11 @@ i{
     border-radius: 10px;
     text-transform: capitalize;
     
-    background-color: #ff0000;
+    background-color: #0015ff;
   }
 
   .general-button:hover{
-    background-color:#ff0000;
+    background-color:#0015ff;
   }
 
   .resource-buttons{
@@ -471,11 +471,11 @@ i{
   }
 
   .admin-button:hover{
-    background-color:#ff0000;
+    background-color:#0015ff;
   }
  
   .home-button:hover {
-    background-color: #ff0000;
+    background-color: #fff200;
   }
   .home-icon04 {
     fill: #ffffff;
