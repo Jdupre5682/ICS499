@@ -33,7 +33,6 @@
         $car_make = "";
         $car_model = "";
         $car_year = "";
-        $car_license_plate = "";
         $car_color = "";
         $car_battery_capacity = "";
         $car_range_per_charge = "";
@@ -56,7 +55,6 @@
             $car_make = $row["Make"];
             $car_model = $row["Model"];
             $car_year = $row["Year"];
-            $car_license_plate = $row["LicensePlate"];
             $car_color = $row["Color"];
             $car_battery_capacity = $row["BatteryCapacity"];
             $car_range_per_charge = $row["RangePerCharge"];
@@ -75,10 +73,6 @@
                     <div class="form-group">
                         <label>Year</label>
                         <p><b><?php echo $car_year; ?></b></p>
-                    </div>
-                    <div class="form-group">
-                        <label>License Plate</label>
-                        <p><b><?php echo $car_license_plate; ?></b></p>
                     </div>
                     <div class="form-group">
                         <label>Color</label>

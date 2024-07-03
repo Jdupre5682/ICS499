@@ -72,7 +72,6 @@
           <th style="color: white;">Make</th>
           <th style="color: white;">Model</th>
           <th style="color: white;">Year</th>
-          <th style="color: white;">License Plate</th>
           <th style="color: white;">Color</th>
           <th style="color: white;">Battery Capacity</th>
           <th style="color: white;">Range Per Charge</th>
@@ -92,15 +91,14 @@
         if ($result->num_rows > 0) {
           while ($row = $result->fetch_assoc()) {
             echo '<tr>
-                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["id"] . '\';">' . $row["CarID"] . '</div></td>
-                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["id"] . '\';">' . $row["Make"] . '</div></td>
-                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["id"] . '\';">' . $row["Model"] . '</div></td>
-                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["id"] . '\';">' . $row["Year"] . '</div></td>
-                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["id"] . '\';">' . $row["LicensePlate"] . '</div></td>
-                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["id"] . '\';">' . $row["Color"] . '</div></td>
-                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["id"] . '\';">' . $row["BatteryCapacity"] . '</div></td>
-                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["id"] . '\';">' . $row["RangePerCharge"] . '</div></td>
-                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["id"] . '\';">' . $row["RentalRatePerDay"] . '</div></td>';
+                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["CarID"] . '\';">' . $row["CarID"] . '</div></td>
+                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["CarID"] . '\';">' . $row["Make"] . '</div></td>
+                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["CarID"] . '\';">' . $row["Model"] . '</div></td>
+                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["CarID"] . '\';">' . $row["Year"] . '</div></td>
+                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["CarID"] . '\';">' . $row["Color"] . '</div></td>
+                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["CarID"] . '\';">' . $row["BatteryCapacity"] . '</div></td>
+                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["CarID"] . '\';">' . $row["RangePerCharge"] . '</div></td>
+                    <td><div onclick="window.location.href=\'view-car.php?id=' . $row["CarID"] . '\';">' . $row["RentalRatePerDay"] . '</div></td>';
             if (isset($_SESSION['permissions']) && $_SESSION['permissions'] == 'super') {
               echo '<td><div onclick="window.location.href=\'view-car.php?id=' . $row["CarID"] . '\';">' . $row["Manager"] . '</div></td>';
             }
@@ -128,7 +126,7 @@
             echo '</td></tr>';
           }
         } else {
-          echo "<tr><td colspan='10'>0 results</td></tr>";
+          echo "<tr><td colspan='9'>0 results</td></tr>"; // Adjust the colspan according to the remaining columns
         }
         $result->close();
         ?>
