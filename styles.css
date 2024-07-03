@@ -17,7 +17,7 @@
 
 
 label{
-  color:#f3eded;
+  color:#3419e457;
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2em;
 }
@@ -305,7 +305,7 @@ i{
 
   .home-header {
 
-    background-color:#f38282;
+    background-color:#e1b935;
     margin-top: 2em;
     margin-bottom: 2em;
     width: 100%;
@@ -376,7 +376,7 @@ i{
     transition: 0.3s;
   }
   .home-icon02:hover {
-    fill: #ff0000;
+    fill: #fffb00;
   }
   .home-select {
     width: 168px;
@@ -436,11 +436,11 @@ i{
     border-radius: 10px;
     text-transform: capitalize;
     
-    background-color: #ff0000;
+    background-color: #0015ff;
   }
 
   .general-button:hover{
-    background-color:#ff0000;
+    background-color:#0015ff;
   }
 
   .resource-buttons{
@@ -471,11 +471,11 @@ i{
   }
 
   .admin-button:hover{
-    background-color:#ff0000;
+    background-color:#0015ff;
   }
  
   .home-button:hover {
-    background-color: #ff0000;
+    background-color: #fff200;
   }
   .home-icon04 {
     fill: #ffffff;
@@ -570,5 +570,3 @@ i{
       padding-bottom: var(--dl-space-space-twounits);
     }
   }
-
-  
