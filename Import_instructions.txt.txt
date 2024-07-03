@@ -1,7 +1,0 @@
-1. create a new database called npo_db
-2. import the sql file
-
-logins
-u: normaladmin@gmail.com p:abc123 (Admin Permissions)
-u: superadmin@gmail.com p:123abc (Super Admin Permissions)
-u: test@gmail.com p:123abc (Admin Permissions)
