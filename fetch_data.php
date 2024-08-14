@@ -12,6 +12,7 @@ $Color = "";
 $BatteryCapacity = "";
 $RangePerCharge = "";
 $RentalRatePerDay = "";
+$Image = "";
 $Manager = "";
 
 $conn = new mysqli($dbhost, $dbuser, $dbpass, $dbname);
